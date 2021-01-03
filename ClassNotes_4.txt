@@ -1,0 +1,125 @@
+Login Test case edureka
+Parameterisation
+Pacing
+Distributed
+HTML Parser
+
+
+
+
+
+Stepping Thread group
+
+
+
+Scenario: Handling multiple user login into application. parameterisation
+
+
+
+
+
+
+
+Recording
+
+- Verify valid samples.
+- Delete/remove invalid samples (having junk data)
+- Customizing our test cases
+
+
+
+
+Scenario
+
+- 10 user to book flight
+- 11-15 user to book hotel
+- 16 to 20 book cruise
+
+launch ------>
+
+login
+
+
+
+
+
+Remote Distributed testing
+
+ why?
+- large user limitations in infrastructure 
+- simulate real time scenario
+- achieving result from different geographical locations
+
+
+How?
+
+
+
+Prerequisites;
+
+- Master and slave should have same version of jmeter installed
+- Same version of java installed on all master and slave machines
+- master and slave machines should be on same network
+
+
+
+
+Configurations:
+
+1) Goto Jmeterproperties file in /bin folder and search for "remote_hosts"
+2) Goto to /bin floder in master machine and click on "create-rmi-keystore"
+3) rmi_keystore will get generated . Copy in /bin folder of slave machines
+4) jmeter-server batch click on master machine
+
+
+command line:
+
+jmeter -n -t "path of .jmx file" -l "location of result" -R"IP address of slave or remote machine"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
